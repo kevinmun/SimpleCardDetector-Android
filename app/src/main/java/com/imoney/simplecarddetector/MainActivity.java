@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Rect;
-import org.opencv.core.RotatedRect;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 

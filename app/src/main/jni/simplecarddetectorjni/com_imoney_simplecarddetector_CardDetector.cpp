@@ -6,15 +6,6 @@
 using namespace std;
 using namespace cv;
 
-/*struct SimpleCardDetectorAgregator
-{
-	cv::Ptr<SimpleCardDetector> detector;
-	
-	SimpleCardDetectorAgregator(){
-		detector = makePtr<SimpleCardDetector>();
-	}
-};*/
-
 JNIEXPORT jlong JNICALL Java_com_imoney_simplecarddetector_CardDetector_nativeCreateObject
   (JNIEnv * jenv, jclass)
   {
@@ -29,7 +20,7 @@ JNIEXPORT jlong JNICALL Java_com_imoney_simplecarddetector_CardDetector_nativeCr
 JNIEXPORT void JNICALL Java_com_imoney_simplecarddetector_CardDetector_nativeDestroyObject
   (JNIEnv *, jclass, jlong thiz)
   {
-	return;
+	delete (SimpleCardDetector*)thiz;
   }
 
 /*
